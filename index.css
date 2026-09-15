@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+*:not(dialog) {
+    margin: 0;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+h1, h2, h3, h4,
+button, input, label {
+    line-height: 1.1;
+}
+
+
+/**
+    *****************************************************
+ */
+
+:root {
+    /* Colours */
+    --colour-grey-900: hsl(0, 0%, 8%);
+    --colour-grey-800: hsl(0, 0%, 12%);
+    --colour-grey-700: hsl(0, 0%, 20%);
+    --colour-green: hsl(75deg, 94%, 57%);
+    --colour-white: hsl(0, 0%, 100%);
+
+    /* Spacing */
+    --spacing-500: 2.5rem;
+    --spacing-300: 1.5rem;
+    --spacing-200: 1rem;
+    --spacing-150: 0.75rem;
+    --spacing-100: 0.5rem;
+    --spacing-50: 0.25rem;
+
+    /* Typography */
+    --font-family: "Inter", sans-serif;
+    --font-size-preset-1: 1.5rem;
+    --font-size-preset-2: 0.875rem;
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --letter-spacing: 0px;
+    --line-height: 1.5;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: var(--spacing-300);
+    background-color: var(--colour-grey-900);
+}
+
+main {
+    background-color: var(--colour-grey-800);
+    padding: var(--spacing-300);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+}
