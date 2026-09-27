@@ -95,16 +95,21 @@ body {
     align-items: center;
     padding-inline: var(--spacing-300);
     background-color: var(--colour-grey-900);
+    font-family: var(--font-family);
+}
+
+main {
+    inline-size: 100%;
+    max-inline-size: 24rem;
 }
 
 article {
     background-color: var(--colour-grey-800);
     padding: var(--spacing-300);
-    font-family: var(--font-family);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-300);
-    flex: 1 0 0;
+    inline-size: 100%;
     border-radius: var(--card-border-radius);
 }
 
@@ -183,6 +188,12 @@ nav {
             line-height: var(--line-height);
             padding: var(--spacing-150);
             border-radius: var(--card-link-border-radius);
+
+            &:hover, &:focus-visible {
+                background-color: var(--colour-green);
+                color: var(--colour-grey-700);
+            }
+
         }
 
     }
