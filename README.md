@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/UNGVSN/social-links-profile.git)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://social-links-profile-00.netlify.app/)
 
 ## My process
 
