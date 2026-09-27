@@ -81,6 +81,12 @@ button, input, label {
     --font-weight-700: 700;
     --letter-spacing: 0px;
     --line-height: 1.5;
+
+    /* Border radius */
+    --card-link-border-radius: 8px;
+    --card-image-border-radius: 50%;
+    --card-border-radius: 12px;
+    --card-avatar-border-radius: 32px;
 }
 
 body {
@@ -91,13 +97,95 @@ body {
     background-color: var(--colour-grey-900);
 }
 
-main {
+article {
     background-color: var(--colour-grey-800);
     padding: var(--spacing-300);
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+    flex: 1 0 0;
+    border-radius: var(--card-border-radius);
 }
 
 header {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+        margin-block-end: var(--spacing-300);
+        inline-size: 5.5rem;
+        block-size: 5.5rem;
+        flex: none;
+        object-fit: cover;
+        object-position: center;
+        border-radius: var(--card-image-border-radius);
+    }
+
+    hgroup {
+
+        h1 {
+            color: var(--colour-white);
+            font-size: var(--font-size-preset-1);
+            font-style: normal;
+            font-weight: var(--font-weight-600);
+            line-height: var(--line-height);
+            margin-block-end: var(--spacing-50);
+        }
+
+        p {
+            color: var(--colour-green);
+            font-size: var(--font-size-preset-2);
+            font-style: normal;
+            font-weight: var(--font-weight-700);
+            line-height: var(--line-height);
+
+        }
+    }
+
+   > p {
+        margin-block-start: var(--spacing-300);
+        color: var(--colour-white);
+        font-size: var(--font-size-preset-2);
+        font-style: normal;
+        font-weight: var(--font-weight-400);
+        line-height: var(--line-height);
+    }
 
 }
+
+nav {
+
+    ul {
+        padding: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: var(--spacing-200);
+
+    }
+
+    li {
+
+        list-style: none;
+
+        a {
+            display: block;
+            text-decoration: none;
+            background-color: var(--colour-grey-700);
+            color: var(--colour-white);
+            font-size: var(--font-size-preset-2);
+            font-style: normal;
+            font-weight: var(--font-weight-700);
+            line-height: var(--line-height);
+            padding: var(--spacing-150);
+            border-radius: var(--card-link-border-radius);
+        }
+
+    }
+}
+
+
