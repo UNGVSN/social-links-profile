@@ -100,7 +100,7 @@ body {
 
 main {
     inline-size: 100%;
-    max-inline-size: 24rem;
+    max-inline-size: calc(327/16 * 1rem);
 }
 
 article {
@@ -199,4 +199,15 @@ nav {
     }
 }
 
+@media (min-width: 48rem) {
+    body {
+        padding-inline: var(--spacing-500);
+    }
+    main {
+        max-inline-size: calc(384/16 * 1rem);
+    }
 
+    article {
+        padding: var(--spacing-500);
+    }
+}
